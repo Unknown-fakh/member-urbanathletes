@@ -58,7 +58,7 @@ Route::prefix('77k')->name('77k.')->group(function () {
 });
 
 Route::prefix('sixpack-3')->name('sixpack3.')->group(function () {
-  Route::get('', function () {return view("public/content/sixpack3/sixpack-3");});
+  Route::get('', function () {return view("public/content/sixpack3/sixpack-3");})->name('index');
   Route::get('daftar',[Sixpack3Controller::class, 'daftar'])->name('daftar');
   Route::get('/send/{kode}', [Sixpack3Controller::class, 'send'])->name('send');
   Route::get('/confirm/{kode}', [Sixpack3Controller::class, 'edit'])->name('edit');

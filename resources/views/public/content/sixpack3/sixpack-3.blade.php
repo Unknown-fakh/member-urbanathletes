@@ -78,7 +78,7 @@
       <img class="px-14" src="{{ url('/image/content/sixpack/yg_didapat.png') }}" alt="alamat urban">
     </div>
     <div class="container content-center items-center lg:px-16 py-4">
-      <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/5jrCadmBCr8?playlist=5jrCadmBCr8&loop=1">
+      <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/HvK6iCGFKP0?autoplay=1&mute=1&playlist=HvK6iCGFKP0&loop=1">
       </iframe>
     </div>
     <div class="my-8 w-full aspect-auto bg-[url('/image/content/heading_bg.png')] bg-cover">
