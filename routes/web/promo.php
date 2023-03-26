@@ -10,6 +10,7 @@ use App\Http\Controllers\Rp288Controller;
 use App\Http\Controllers\Rp77kController;
 use App\Http\Controllers\Rp99kController;
 use App\Http\Controllers\Sixpack3Controller;
+use App\Http\Controllers\Sixpack4Controller;
 use Illuminate\Support\Facades\Route;
 
 
@@ -89,6 +90,17 @@ Route::prefix('199')->name('199.')->group(function () {
   Route::post('order', [Rp199Controller::class, 'order'])->name('order');
   Route::put('/generate',[Rp199Controller::class, 'updateKode'])->name('updateKode');
   // Route::get('/daftar', [Rp99kController::class, 'daftar'])->name('daftar');
+});
+
+Route::prefix('sixpack-challenge')->name('sixpack-challenge.')->group(function (){
+  Route::get('', function () {return view("public/promo/sixpack-challenge/index");})->name('index');
+  Route::get('/daftar', [Sixpack4Controller::class, 'daftar'])->name('daftar');
+  Route::get('/generate', [Sixpack4Controller::class, 'generate'])->name('generate');
+  Route::get('/confirm', [Sixpack4Controller::class, 'confirm'])->name('confirm');
+  Route::get('/send/{kode}', [Sixpack4Controller::class, 'send'])->name('send');
+  Route::post('', [Sixpack4Controller::class, 'save'])->name('save');
+  Route::post('order', [Sixpack4Controller::class, 'order'])->name('order');
+  Route::put('/generate',[Sixpack4Controller::class, 'updateKode'])->name('updateKode');
 });
 
 Route::prefix('v2')->name('v2.')->group(function () {

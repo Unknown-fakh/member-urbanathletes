@@ -8,6 +8,7 @@ use App\Models\Rp199;
 use App\Models\Rp288;
 use App\Models\Rp77k;
 use App\Models\Rp99k;
+use App\Models\Sixpack4;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -25,6 +26,7 @@ class OrderController extends Controller
         $rp77k = Rp77k::where('kode', $kode)->first();
         $rp288k = Rp288::where('kode', $kode)->first();
         $rp199k = Rp199::where('kode', $kode)->first();
+        $sc488k = Sixpack4::where('kode',$kode)->first();
         
         if ($rp99k) { 
             $dataOrder = $rp99k; 
@@ -41,6 +43,10 @@ class OrderController extends Controller
         if ($rp199k) { 
             $dataOrder = $rp199k; 
             $dataOrder->order_name = '199 membership';
+        }
+        if ($sc488k) { 
+            $dataOrder = $sc488k; 
+            $dataOrder->order_name = 'Sixpack Challenge Membership';
         }
         return $dataOrder;
     }
