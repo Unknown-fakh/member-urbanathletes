@@ -2,6 +2,7 @@
   <x-layout_card_form>
     <form action="{{ route('99k.save') }}" method="post">
       @csrf
+      @method('PUT')
       <div class="flex justify-center border-b my-4 pb-4">
         <h2 class="text-3xl font-Futura">Daftar form GYM</h2>
       </div>
