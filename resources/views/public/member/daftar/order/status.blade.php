@@ -46,7 +46,13 @@
         </tbody>
       </table>
       <div class="py-4">
-        <a href="{{ url('/') }}" class="underline bg-yellow-400 rounded-md py-2 px-4"><i class="fa-solid fa-globe"></i> Home</a>
+        @if ($dataOrder->club_id == 2)
+          <a href="https://wa.me/628179188880?text=Hallo%20Urban%20Athletes%0ASaya%20{{$dataOrder->nama}}%0ABerikut%20rincian%20pesanan%20Saya%20:%0A%0AKode%20Pembayaran%09:{{$status['order_id']}}%0ATotal%20Bayar%09:%20Rp%2099.000,00%0AClub%20%09:%20UA Merr%0AStatus Pembayaran%20%09:%20Telah Di Bayar" class="underline bg-yellow-400 rounded-md py-2 px-4"><i class="fa-solid fa-globe"></i> Kirim notifikasi ke whatsapp Urban Athletes</a>
+        @elseif ($dataOrder->club_id == 4)
+          <a href="https://wa.me/628179188880?text=Hallo%20Urban%20Athletes%0ASaya%20{{$dataOrder->nama}}%0ABerikut%20rincian%20pesanan%20Saya%20:%0A%0AKode%20Pembayaran%09:{{$status['order_id']}}%0ATotal%20Bayar%09:%20Rp%2099.000,00%0AClub%20%09:%20UA Tidar%0AStatus Pembayaran%20%09:%20Telah Di Bayar" class="underline bg-yellow-400 rounded-md py-2 px-4"><i class="fa-solid fa-globe"></i> Kirim notifikasi ke whatsapp Urban Athletes</a>
+        @elseif ($dataOrder->club_id == 5)
+          <a href="https://wa.me/628179188880?text=Hallo%20Urban%20Athletes%0ASaya%20{{$dataOrder->nama}}%0ABerikut%20rincian%20pesanan%20Saya%20:%0A%0AKode%20Pembayaran%09:{{$status['order_id']}}%0ATotal%20Bayar%09:%20Rp%2099.000,00%0AClub%20%09:%20UA Lenmarc%0AStatus Pembayaran%20%09:%20Telah Di Bayar" class="underline bg-yellow-400 rounded-md py-2 px-4"><i class="fa-solid fa-globe"></i> Kirim notifikasi ke whatsapp Urban Athletes</a>
+        @endif
       </div>
     </div>
   </x-layout_card_form>

@@ -33,8 +33,8 @@ Route::prefix('daftar')->name('daftar.')->group(function () {
   Route::post('', [PublicController::class, 'daftarSave'])->name('store');
 });
 
-Route::prefix('99')->name('99k.')->group(function () {
-  Route::get('', function () {return view("public/content/99k/index");})->name('index');
+Route::prefix('99k')->name('99k.')->group(function () {
+  Route::get('', function () {return view("public/content/99k/index2");})->name('index');
   Route::get('/daftar', [Rp99kController::class, 'daftar'])->name('daftar');
   Route::get('/generate', [Rp99kController::class, 'generate'])->name('generate');
   Route::get('/proses/{kode}', [Rp99kController::class, 'proses'])->name('proses');

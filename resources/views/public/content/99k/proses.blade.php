@@ -48,6 +48,31 @@
   </x-layout_card_form>
   @push('script')
     <script type="text/javascript">
+      window.addEventListener("load", function(){
+          window.snap.pay('{{$token}}', {
+            onSuccess: function(result){
+              /* You may add your own implementation here */
+              alert("payment success!"); 
+              // console.log(result);
+              sendRespont(result)
+            },
+            onPending: function(result){
+              /* You may add your own implementation here */
+              alert("wating your payment!"); 
+              // console.log(result);
+              sendRespont(result) // <<============ INI PENYIMPANAN KE DB ===================>>
+            },
+            onError: function(result){
+              /* You may add your own implementation here */
+              alert("payment failed!"); 
+              // console.log(result);
+            },
+            onClose: function(){
+              /* You may add your own implementation here */
+              alert('you closed the popup without finishing the payment');
+            }
+          });
+      });
       // For example trigger on button clicked, or any time you need
       var payButton = document.getElementById('pay-button');
       payButton.addEventListener('click', function () {

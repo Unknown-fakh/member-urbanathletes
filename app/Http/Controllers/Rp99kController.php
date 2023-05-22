@@ -14,12 +14,14 @@ use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 
 class Rp99kController extends Controller
 {
     public function __construct()
     {
         $this->apiModels = new ApiModels();
+        // $this->clubs = $clubs;
     }
 
     public function daftar()
@@ -106,11 +108,23 @@ class Rp99kController extends Controller
         );
         $rp99k = Rp99k::create($datareq);
         $rp99k->url = url('99k/proses') . '/';
+        $nf = "62". substr($rp99k->nomor, 1);
+
+        //echo $clubs_kode['name'];
         
-        Mail::to( $rp99k->email )->send(new SendEmail($rp99k, $clubs));
+        
+        //$nomor = $rp99k->nomor;
+
+        // $url = "https://wa.me/628179188880?text=Hallo%20Urban%20Athletes%0ASaya%20%7Bnama%7D%0ABerikut%20rincian%20pesanan%20Saya%20:%0A%0AKode%20Pembayaran%09:%20%7Bkode%7D%0ATotal%20Bayar%09:%20Rp%2099.000,00%0AClub%20%09:%20%7Bclub_name%7D";
+        //return Redirect::away($url);
+        // Mail::to( $rp99k->email )->send(new SendEmail($rp99k, $clubs));
         // return redirect('/')->with('massage', 'Join ' . $request->nama . ' berhasi ditambahkan');
-        // return redirect()->route('99k.proses', ['kode' => $rp99k->kode]);
-        return redirect()->route('99k.daftar')->with('success', 'Silahkan cek Email yang kami kirim ke ')->with('email', $rp99k->email);
+        // if ($rp99k->kode !=null) {
+        //     # code...
+        // }
+        //return Redirect::away($url);
+        return redirect()->route('99k.proses', ['kode' => $rp99k->kode]);
+        //return redirect()->route('99k.daftar')->with('success', 'Silahkan cek Email & Whatsapp yang kami kirim ke ')->with('email', $rp99k->email);
     }
 
     public function proses($kode)

@@ -11,12 +11,13 @@ use App\Models\Rp99k;
 use App\Models\Sixpack4;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class OrderController extends Controller
 {
     public function __construct()
     {
-        
+        // $this->apiModels = new ApiModels();
     }
     
     function productOrder($kode)
@@ -85,7 +86,12 @@ class OrderController extends Controller
                     'json_midtrans' => json_encode($data['status'])
                 ]);
         }
+        // $clubs = $this->apiModels->allClubs()['rows'];
+        // $clubs_kode['name'];
+        // $url = "https://wa.me/628179188880?text=Hallo%20Urban%20Athletes%0ASaya%20%7Bnama%7D%0ABerikut%20rincian%20pesanan%20Saya%20:%0A%0AKode%20Pembayaran%09:%20%7Bkode%7D%0ATotal%20Bayar%09:%20Rp%2099.000,00%0AClub%20%09:%20%7Bclub_name%7D";
+        // return Redirect::away($url);
         // dd($data);
+
         return view("public/member/daftar/order/status", $data);
     }
 
