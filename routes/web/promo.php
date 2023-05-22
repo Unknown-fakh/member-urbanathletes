@@ -34,6 +34,7 @@ Route::prefix('daftar')->name('daftar.')->group(function () {
 });
 
 Route::prefix('99k')->name('99k.')->group(function () {
+  // Route::get('', function () {return view("public/content/99k/index2");})->name('index');
   Route::get('', function () {return view("public/content/99k/index2");})->name('index');
   Route::get('/daftar', [Rp99kController::class, 'daftar'])->name('daftar');
   Route::get('/generate', [Rp99kController::class, 'generate'])->name('generate');
