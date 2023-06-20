@@ -82,14 +82,14 @@ Route::prefix('288')->name('288.')->group(function () {
 });
 
 Route::prefix('199')->name('199.')->group(function () {
-  Route::get('', function () {return view("public/promo/199/index");})->name('index');
-  Route::get('/daftar', [Rp199Controller::class, 'daftar'])->name('daftar');
-  Route::get('/generate', [Rp199Controller::class, 'generate'])->name('generate');
-  Route::get('/confirm', [Rp199Controller::class, 'confirm'])->name('confirm');
-  Route::get('/send/{kode}', [Rp199Controller::class, 'send'])->name('send');
-  Route::post('', [Rp199Controller::class, 'save'])->name('save');
-  Route::post('order', [Rp199Controller::class, 'order'])->name('order');
-  Route::put('/generate',[Rp199Controller::class, 'updateKode'])->name('updateKode');
+  //Route::get('', function () {return view("public/promo/199/index");})->name('index');
+  //Route::get('/daftar', [Rp199Controller::class, 'daftar'])->name('daftar');
+  //Route::get('/generate', [Rp199Controller::class, 'generate'])->name('generate');
+  //Route::get('/confirm', [Rp199Controller::class, 'confirm'])->name('confirm');
+  //Route::get('/send/{kode}', [Rp199Controller::class, 'send'])->name('send');
+  //Route::post('', [Rp199Controller::class, 'save'])->name('save');
+  //Route::post('order', [Rp199Controller::class, 'order'])->name('order');
+  //Route::put('/generate',[Rp199Controller::class, 'updateKode'])->name('updateKode');
   // Route::get('/daftar', [Rp99kController::class, 'daftar'])->name('daftar');
 });
 
