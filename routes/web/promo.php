@@ -116,3 +116,7 @@ Route::prefix('v2')->name('v2.')->group(function () {
     Route::get('/status/{id}', [BackInShapeController::class, 'status'])->name('status');
   });
 });
+
+Route::prefix('glute-challenge-01')->name('glute-challenge-01.')->group(function () {
+  Route::get('', function () {return view("public/promo/glute-challenge/index");})->name('index');
+});
