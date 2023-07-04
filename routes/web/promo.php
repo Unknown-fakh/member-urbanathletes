@@ -11,6 +11,7 @@ use App\Http\Controllers\Rp77kController;
 use App\Http\Controllers\Rp99kController;
 use App\Http\Controllers\Sixpack3Controller;
 use App\Http\Controllers\Sixpack4Controller;
+use App\Http\Controllers\SpecialDealController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -119,4 +120,9 @@ Route::prefix('v2')->name('v2.')->group(function () {
 
 Route::prefix('glute-challenge-01')->name('glute-challenge-01.')->group(function () {
   Route::get('', function () {return view("public/promo/glute-challenge/index");})->name('index');
+});
+
+Route::prefix('special-deal')->name('special-deal.')->group(function () {
+  Route::get('', [SpecialDealController::class, 'index'])->name('index');
+  Route::post('', [SpecialDealController::class, 'store'])->name('store');
 });
