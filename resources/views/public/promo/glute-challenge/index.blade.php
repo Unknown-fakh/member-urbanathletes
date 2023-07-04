@@ -111,14 +111,14 @@
             </div>
             <h2 class="font-FuturaBold lg:text-[30px] md:text-[30px] text-base leading-snug font-extrabold mt-6 italic uppercase text-white">MULAI DARI IDR 7.250K</h2>
             <div class="flex items-center py-4">
-              <a target="_blank" href="https://wa.link/cn0nif">
+              <a target="_blank" href="https://wa.link/r3s4aq">
                 <button id="btn-beli" class="
                   py-2 px-4 rounded-xl bg-[#ff0000] uppercase font-bold
                   hover:shadow hover:shadow-red-400 hover:bg-red-700
                   transition-all duration-300 font-FuturaBold lg:text-sm
                   text-white
                 ">
-                  Beli Modul Challenge
+                  Konsultasi Sekarang
                 </button>
               </a>
             </div>
