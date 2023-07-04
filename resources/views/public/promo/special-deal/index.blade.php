@@ -155,7 +155,7 @@
                     '<table class="table-responsive table-rule"><tbody> ' +
                     '<tr><td style="vertical-align: top;">1</td><td>Jenis promo bisa berubah, mengikuti sesuai periode promo yang sedang berlaku.</td></tr>' +
                     '<tr><td style="vertical-align: top;">2</td><td>Promo ditujukan untuk pembelian program membership dan atau paket personal trainer.</td></tr>' +
-                    '<tr><td style="vertical-align: top;">3</td><td>Detail promo akan di jelaskan secara rinci oleh tim Fit Consultant Fitnessworks.</td></tr>' +
+                    '<tr><td style="vertical-align: top;">3</td><td>Detail promo akan di jelaskan secara rinci oleh Tim Athletes Consultant Urban Athletes.</td></tr>' +
                     '<tr><td style="vertical-align: top;">4</td><td>Penawaran bersifat terbatas pada periode dan kuota promo, amankan kuota segera!</td></tr>' +
                     '</tbody></table>',
                 showCloseButton: true,
