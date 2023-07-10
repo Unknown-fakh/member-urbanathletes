@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BackInShapeController;
 use App\Http\Controllers\ContentController;
+use App\Http\Controllers\FreeTrialController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PublicController;
@@ -15,7 +16,7 @@ use App\Http\Controllers\SpecialDealController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::prefix('order')->name('order.')->group(function(){
+Route::prefix('order')->name('order.')->group(function () {
   Route::get('', [OrderController::class, 'notData'])->name('notData');
   Route::post('', [OrderController::class, 'save'])->name('save'); // <=== ini masih dipakai
   Route::get('/{id}/status', [OrderController::class, 'status'])->name('status');
@@ -36,15 +37,16 @@ Route::prefix('daftar')->name('daftar.')->group(function () {
 
 Route::prefix('99k')->name('99k.')->group(function () {
   // Route::get('', function () {return view("public/content/99k/index2");})->name('index');
-  Route::get('', function () {return view("public/content/99k/index2");})->name('index');
+  Route::get('', function () {
+    return view("public/content/99k/index2"); })->name('index');
   Route::get('/daftar', [Rp99kController::class, 'daftar'])->name('daftar');
   Route::get('/generate', [Rp99kController::class, 'generate'])->name('generate');
   Route::get('/proses/{kode}', [Rp99kController::class, 'proses'])->name('proses');
   Route::get('/confirm/{kode}', [Rp99kController::class, 'edit'])->name('invoiceEdit');
   Route::get('/confirm/{kode}/send', [Rp99kController::class, 'confirmSend'])->name('confirmSend');
   Route::post('', [Rp99kController::class, 'daftarSave'])->name('save');
-  Route::put('{kode}',[Rp99kController::class, 'update'])->name('update');
-  Route::post('/generate',[Rp99kController::class, 'updateKode'])->name('updateKode');
+  Route::put('{kode}', [Rp99kController::class, 'update'])->name('update');
+  Route::post('/generate', [Rp99kController::class, 'updateKode'])->name('updateKode');
 });
 
 Route::prefix('77k')->name('77k.')->group(function () {
@@ -61,24 +63,26 @@ Route::prefix('77k')->name('77k.')->group(function () {
 });
 
 Route::prefix('sixpack-3')->name('sixpack3.')->group(function () {
-  Route::get('', function () {return view("public/content/sixpack3/sixpack-3");})->name('index');
-  Route::get('daftar',[Sixpack3Controller::class, 'daftar'])->name('daftar');
+  Route::get('', function () {
+    return view("public/content/sixpack3/sixpack-3"); })->name('index');
+  Route::get('daftar', [Sixpack3Controller::class, 'daftar'])->name('daftar');
   Route::get('/send/{kode}', [Sixpack3Controller::class, 'send'])->name('send');
   Route::get('/confirm/{kode}', [Sixpack3Controller::class, 'edit'])->name('edit');
   Route::get('/confirm/{kode}/send', [Sixpack3Controller::class, 'confirmSend'])->name('confirmSend');
-  Route::post('',[Sixpack3Controller::class, 'store'])->name('store');
-  Route::put('{kode}',[Sixpack3Controller::class, 'update'])->name('update');
+  Route::post('', [Sixpack3Controller::class, 'store'])->name('store');
+  Route::put('{kode}', [Sixpack3Controller::class, 'update'])->name('update');
 });
 
 Route::prefix('288')->name('288.')->group(function () {
-  Route::get('', function () {return view("public/promo/288/index");})->name('index');
+  Route::get('', function () {
+    return view("public/promo/288/index"); })->name('index');
   Route::get('/daftar', [Rp288Controller::class, 'daftar'])->name('daftar');
   Route::get('/generate', [Rp288Controller::class, 'generate'])->name('generate');
   Route::get('/confirm', [Rp288Controller::class, 'confirm'])->name('confirm');
   Route::get('/send/{kode}', [Rp288Controller::class, 'send'])->name('send');
   Route::post('', [Rp288Controller::class, 'save'])->name('save');
   Route::post('order', [Rp288Controller::class, 'order'])->name('order');
-  Route::put('/generate',[Rp288Controller::class, 'updateKode'])->name('updateKode');
+  Route::put('/generate', [Rp288Controller::class, 'updateKode'])->name('updateKode');
   // Route::get('/daftar', [Rp99kController::class, 'daftar'])->name('daftar');
 });
 
@@ -94,15 +98,16 @@ Route::prefix('199')->name('199.')->group(function () {
   // Route::get('/daftar', [Rp99kController::class, 'daftar'])->name('daftar');
 });
 
-Route::prefix('sixpack-challenge')->name('sixpack-challenge.')->group(function (){
-  Route::get('', function () {return view("public/promo/sixpack-challenge/index");})->name('index');
+Route::prefix('sixpack-challenge')->name('sixpack-challenge.')->group(function () {
+  Route::get('', function () {
+    return view("public/promo/sixpack-challenge/index"); })->name('index');
   Route::get('/daftar', [Sixpack4Controller::class, 'daftar'])->name('daftar');
   Route::get('/generate', [Sixpack4Controller::class, 'generate'])->name('generate');
   Route::get('/confirm', [Sixpack4Controller::class, 'confirm'])->name('confirm');
   Route::get('/send/{kode}', [Sixpack4Controller::class, 'send'])->name('send');
   Route::post('', [Sixpack4Controller::class, 'save'])->name('save');
   Route::post('order', [Sixpack4Controller::class, 'order'])->name('order');
-  Route::put('/generate',[Sixpack4Controller::class, 'updateKode'])->name('updateKode');
+  Route::put('/generate', [Sixpack4Controller::class, 'updateKode'])->name('updateKode');
 });
 
 Route::prefix('v2')->name('v2.')->group(function () {
@@ -119,10 +124,16 @@ Route::prefix('v2')->name('v2.')->group(function () {
 });
 
 Route::prefix('glute-challenge-01')->name('glute-challenge-01.')->group(function () {
-  Route::get('', function () {return view("public/promo/glute-challenge/index");})->name('index');
+  Route::get('', function () {
+    return view("public/promo/glute-challenge/index"); })->name('index');
 });
 
 Route::prefix('special-deal')->name('special-deal.')->group(function () {
   Route::get('', [SpecialDealController::class, 'index'])->name('index');
   Route::post('', [SpecialDealController::class, 'store'])->name('store');
+});
+
+Route::prefix('free-trial')->name('free-trial.')->group(function () {
+  Route::get('', [FreeTrialController::class, 'index'])->name('index');
+  Route::post('', [FreeTrialController::class, 'store'])->name('store');
 });

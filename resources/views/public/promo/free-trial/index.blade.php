@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="UA Special Deal" />
-    <title>Urban Athletes - Special Deal</title>
+    <title>Urban Athletes - Free Trial</title>
     <link rel="icon" href="{{ URL::asset('image/promo/special-deal/Logo-UA.png') }}">
     <link rel="stylesheet" href="{{ URL::asset('specialdeal/css/bootstrap/bootstrap.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('specialdeal/css/style-form.css') }}" />
@@ -25,12 +25,11 @@
                 <div class="row">
                     <div class="col-sm-7">
                         <img src="{{ URL::asset('image/promo/special-deal/Logo-UA.png') }}" alt="" class="img-logo">
-                        <h1 class="header-1">GET SPECIAL DEAL!!</h1>
+                        <h1 class="header-1">GET FREE TRIAL!!</h1>
                         <p class="detail-1">
-                            Jangan lewatkan Promo Spesial Deal dari Urban Athletes 
-                            untuk Anda hari ini! Dapatkan harga khusus untuk pendaftaran membership di Urban Athletes. <br>
-                            Bergabunglah dengan ribuan member lainnya dan rasakan nikmatnya ngegym dengan fasilitas premium. <br>
-                            Segera daftar sekarang!
+                            Mulailah fitness journey Anda dengan cara klaim voucher Free Trial di Urban Athletes! <br>
+                            Nikmati puluhan jenis kelas setiap minggunya dan rasakan pengalaman fitness dengan fasilitas premium. <br>
+                            Klaim voucher sekarang!
                         </p>
                     </div>
                     <div class="col-sm-5">
@@ -59,7 +58,7 @@
 
                             <form method="POST" id="signup-form" class="signup-form">
                                 {{ csrf_field() }}
-                                <h2 class="form-title" style="text-align: left;">DAPATKAN PROMO MENARIK SEKARANG JUGA!!!</h2>
+                                <h2 class="form-title" style="text-align: left;">NIKMATI FREE TRIAL ANDA SEKARANG JUGA!!!</h2>
                                 <div class="form-group">
                                     <label for="full_name" class="normal" style="font-weight: 600;margin-left: 5px;">Nama Lengkap<span style="color:red;"> *</span></label>
                                     <input type="text" class="form-input" name="name" id="name" placeholder="" required />
@@ -153,10 +152,13 @@
             Swal.fire({
                 html: '<p class="header-rule-1">Syarat dan ketentuan Free Trial :</p>' +
                     '<table class="table-responsive table-rule"><tbody> ' +
-                    '<tr><td style="vertical-align: top;">1</td><td>Jenis promo bisa berubah, mengikuti sesuai periode promo yang sedang berlaku.</td></tr>' +
-                    '<tr><td style="vertical-align: top;">2</td><td>Promo ditujukan untuk pembelian program membership dan atau paket personal trainer.</td></tr>' +
-                    '<tr><td style="vertical-align: top;">3</td><td>Detail promo akan di jelaskan secara rinci oleh Tim Athletes Consultant Urban Athletes.</td></tr>' +
-                    '<tr><td style="vertical-align: top;">4</td><td>Penawaran bersifat terbatas pada periode dan kuota promo, amankan kuota segera!</td></tr>' +
+                    '<tr><td style="vertical-align: top;">1</td><td>Free trial di tujukan untuk non-member yang belum pernah menjadi member dan atau belum pernah melakukan free trial sebelumnya dalam waktu 6 bulan kebelakang.</td></tr>' +
+                    '<tr><td style="vertical-align: top;">2</td><td>Wajib membawa ID Card (KTP/Paspor/SIM/Kartu Pelajar/Kartu Keluarga) sebagi tanda pengenal saat akan melakukan aktivasi.</td></tr>' +
+                    '<tr><td style="vertical-align: top;">3</td><td>Free trial tidak bisa di uangkan dalam bentuk apapun.</td></tr>' +
+                    '<tr><td style="vertical-align: top;">4</td><td>Berlaku untuk usia minimal 18 tahun keatas.</td></tr>' +
+                    '<tr><td style="vertical-align: top;">5</td><td>Free trial harus di gunakan secara berturut-turut.</td></tr>' +
+                    '<tr><td style="vertical-align: top;">6</td><td>Free trial tidak bisa di pindah tangankan.</td></tr>' +
+                    '<tr><td style="vertical-align: top;">7</td><td>Wajib membawa kunci loker dan handuk sendiri serta mengenakan pakaian olahraga lengkap.</td></tr>' +
                     '</tbody></table>',
                 showCloseButton: true,
                 showConfirmButton: false,
