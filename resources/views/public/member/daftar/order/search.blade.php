@@ -4,7 +4,7 @@
       <div class="p-4">
         <div class="flex justify-between items-center">
           <div>
-            <a href="{{ url('/') }}" class="underline bg-yellow-400 rounded-md py-2 px-4"><i class="fa-solid fa-globe"></i> Kembali</a>
+            <a href="##" onClick="history.go(-1); return false;" class="underline bg-yellow-400 rounded-md py-2 px-4"><i class="fa-solid fa-globe"></i> Kembali</a>
           </div>
           <div>
             <input class="outline-none focus:ring-0" type="text" name="kode" id="kode" placeholder="Kode order">
