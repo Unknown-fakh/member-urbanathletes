@@ -13,6 +13,31 @@
     <link rel="stylesheet" href="{{ URL::asset('specialdeal/font-awesome/all.css') }}">
     <script src="{{ URL::asset('specialdeal/vendor/jquery/jquery.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '240132872462280');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=240132872462280&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -27,7 +52,7 @@
                         <img src="{{ URL::asset('image/promo/special-deal/Logo-UA.png') }}" alt="" class="img-logo">
                         <h1 class="header-1">GET SPECIAL DEAL!!</h1>
                         <p class="detail-1">
-                            Jangan lewatkan Promo Spesial Deal dari Urban Athletes 
+                            Jangan lewatkan Promo Spesial Deal dari Urban Athletes
                             untuk Anda hari ini! Dapatkan harga khusus untuk pendaftaran membership di Urban Athletes. <br>
                             Bergabunglah dengan ribuan member lainnya dan rasakan nikmatnya ngegym dengan fasilitas premium. <br>
                             Segera daftar sekarang!
