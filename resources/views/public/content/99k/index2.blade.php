@@ -255,11 +255,33 @@
               Membership hanya diberikan kepada New Join Member atau belum pernah join
               membership maupun trial di salah satu cabang dalam kurun waktu 6 bulan terakhir.
             </li>
-            <li class="py-2">
+            <!-- <li class="py-2">
               Fasilitas yang didapat oleh member sama seperti regular membership yaitu : <br>
-              a. Free In-Body Check     c. Free Access All Classes & Exercises <br> e. Free Access kolam renang/sauna. <br>
-              b. Free 1x PT Session     d. Latihan mandiri <br>
-            </li>
+              a. Free In-Body Check     c. Free Access All Classes & Exercises  e. Free Access kolam renang/sauna.
+              b. Free 1x PT Session     d. Latihan mandiri 
+            </li> -->
+            <ul class="py-2">
+              <li>
+                Fasilitas yang didapat oleh member sama seperti regular membership yaitu : <br>
+                <span style="display: inline-block; margin-left: 20px;">
+                  a. Free In-Body Check
+                </span>
+                <span style="display: inline-block; margin-left: 20px;">
+                  b. Free 1x PT Session
+                </span>
+                <br>
+                <span style="display: inline-block; margin-left: 20px;">
+                  c. Free Access All Classes & Exercises
+                </span>
+                <span style="display: inline-block; margin-left: 20px;">
+                  d. Latihan mandiri
+                </span>
+                <br>
+                <span style="display: inline-block; margin-left: 20px;">
+                  e. Free Access kolam renang/sauna
+                </span>
+              </li>
+            </ul>
             <li class="py-2">
               Membership ini Non-Refundable atau tidak dapat diuangkan
             </li>
