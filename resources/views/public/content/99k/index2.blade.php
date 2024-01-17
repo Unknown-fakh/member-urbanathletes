@@ -258,7 +258,7 @@
             <li class="py-2">
               Fasilitas yang didapat oleh member sama seperti regular membership yaitu : <br>
               a. Free In-Body Check <br>  c. Free Access All Classes & Exercises  e. Free Access kolam renang/sauna.
-              b. Free 1x PT Session   d. Latihan mandiri
+              b. Free 1x PT Session <br>  d. Latihan mandiri <br>
             </li>
             <li class="py-2">
               Membership ini Non-Refundable atau tidak dapat diuangkan
