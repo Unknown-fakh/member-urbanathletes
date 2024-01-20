@@ -138,7 +138,7 @@
     <div class="my-12 px-8">
       <h2 class="text-xl md:text-3xl text-center font-black italic leading-snug text-transparent bg-clip-text bg-black text-shadow-lg">URBAN ATHLETES CLUBS</h2>
       <div class="flex flex-wrap lg:flex-nowrap py-4 justify-around">
-        <div class="m-4 w-full max-w-[280px] lg:max-w-sm px-2 relative">
+        <!-- <div class="m-4 w-full max-w-[280px] lg:max-w-sm px-2 relative">
           <img class="object-cover object-center w-full mx-auto transition-all duration-300" src="{{ url('/image/promo/288/clubs/1.png')}}" alt="clubs Urban Athletes">
           <div class="p-4 font-AmpleSoft">
             <h3 class="text-xl font-FuturaBold italic pb-4">URBAN ATHLETES GUNAWANGSA MERR</h3>
@@ -156,7 +156,7 @@
               <button class="w-full">Lihat Lokasi</button>
             </a>
           </div>
-        </div>
+        </div> -->
         <div class="m-4 w-full max-w-[280px] lg:max-w-sm px-2 relative">
           <img class="object-cover object-center w-full mx-auto transition-all duration-300" src="{{ url('/image/promo/288/clubs/2.png')}}" alt="clubs Urban Athletes">
           <div class="p-4 font-AmpleSoft">
