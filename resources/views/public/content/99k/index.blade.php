@@ -92,7 +92,7 @@
       {{-- <p class="text-center">
         Program latihan dengan sistem yang lebih mudah dan hemat biaya. Mengajak Anda untuk lebih bugar dengan cara yang simple, efisien dan hemat Di klub Urban Athletes yang memiliki standar protokol kesehatan yang sesuai dengan ketentuan dari pemerintah, sehingga aman dan nyaman untuk Anda berolaraga.
       </p> --}}
-      {{-- UA Merr --}}
+      <!-- {{-- UA Merr --}}
       <div class="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8 my-4 md:mx-4 overflow-hidden">
         {{-- SwiperJS --}}
         <div class="swiper mySwiper w-full">
@@ -128,7 +128,7 @@
             <p class=""><i class="fa-solid fa-circle-check text-yellow-500"></i><span class="ml-3">The Valor</span></p>
           </div>
         </div>
-      </div>
+      </div> -->
       {{-- UA Marvell --}}
       {{-- <div class="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8 my-4 md:mx-4 overflow-hidden">
         <div class="swiper mySwiper w-full">
