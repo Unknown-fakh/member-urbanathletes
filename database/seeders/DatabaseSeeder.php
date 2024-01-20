@@ -17,15 +17,15 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         $clubData = [
-            [   // Merr
-                'club_id' => '2',
-                'club_email' => 'cs.urbanfitgwmerr@gmail.com',
-                'nowa' => '628113343168',
-                'an_rek' => 'Valdixon Signature Management',
-                'bca' => '0885-806-061',
-                'mandiri' => '140-00-697-91-979',
+            // [   // Merr
+            //     'club_id' => '2',
+            //     'club_email' => 'cs.urbanfitgwmerr@gmail.com',
+            //     'nowa' => '628113343168',
+            //     'an_rek' => 'Valdixon Signature Management',
+            //     'bca' => '0885-806-061',
+            //     'mandiri' => '140-00-697-91-979',
                 
-            ],
+            // ],
             [   // Marvell
                 'club_id' => '3',
                 'club_email' => 'cs.urbancrossfitmarvell@gmail.com',
