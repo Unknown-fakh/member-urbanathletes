@@ -23,7 +23,7 @@
         </tr>
         <tr>
           <td>Club Yang di Pilih</td>
-          <td>: (UA Merr, UA Tidar, UA Marvell, UA Lenmarc, All Club)</td>
+          <td>: (UA Tidar, UA Marvell, UA Lenmarc, All Club)</td>
         </tr>
       </table>
       <p>Silahkan segera lakukan pembayaran ke salah satu rekening di bawah ini :</p>
