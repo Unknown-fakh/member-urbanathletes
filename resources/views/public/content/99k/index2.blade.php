@@ -109,7 +109,7 @@
     </div>
 
     <div class="my-8 px-8">
-      <h2 class="text-xl md:text-3xl text-center font-black italic leading-snug text-transparent bg-clip-text bg-black text-shadow-lg">CLASSES & FACILITIES</h2>
+      <h2 class="text-xl md:text-3xl text-center font-black italic leading-snug text-transparent bg-clip-text bg-black">CLASSES & FACILITIES</h2>
       <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 pt-8 md:px-12 gap-2">
         <div class="lg:block md:block hidden col-span-2 row-span-2 relative group overflow-hidden drop-shadow">
           <img class="object-cover object-center w-full mx-auto transition-all duration-300" src="{{ url('/image/promo/288/classes/1.png')}}" alt="News Urban Athletes">
@@ -136,7 +136,8 @@
     </div>
 
     <div class="my-12 px-8">
-      <h2 class="text-xl md:text-3xl text-center font-black italic leading-snug text-transparent bg-clip-text bg-black text-shadow-lg">URBAN ATHLETES CLUBS</h2>
+      <!-- <h2 class="text-xl md:text-3xl text-center font-black italic leading-snug text-transparent bg-clip-text bg-black text-shadow-lg">URBAN ATHLETES CLUBS</h2> -->
+      <h2 class="text-xl md:text-3xl text-center font-black italic leading-snug text-transparent bg-clip-text bg-black">URBAN ATHLETES CLUBS</h2>
       <div class="flex flex-wrap lg:flex-nowrap py-4 justify-around">
         <!-- <div class="m-4 w-full max-w-[280px] lg:max-w-sm px-2 relative">
           <img class="object-cover object-center w-full mx-auto transition-all duration-300" src="{{ url('/image/promo/288/clubs/1.png')}}" alt="clubs Urban Athletes">
