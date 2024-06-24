@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       container: {
         center: true,
-        pendding: '1rem',
+        pandding: '1rem',
       },
       spacing: {
         '18': '70px',
@@ -24,6 +24,7 @@ module.exports = {
     },
     fontFamily: {
       'Futura': ['Futura', 'AmpleSoft', 'sans-serif'],
+      'FuturaBold': ['FuturaBold', 'AmpleSoft', 'sans-serif'],
       'AmpleSoft': ['AmpleSoft', 'sans-serif'],
     }
   },

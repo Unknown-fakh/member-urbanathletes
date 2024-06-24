@@ -9,11 +9,6 @@ class ContentController extends Controller
     public function index()
     {
         // return view("public/content/index");
-        return redirect()->route('99k');
-    }
-
-    public function index99k()
-    {
-        return view("public/content/99k");
+        return redirect()->route('288.index');
     }
 }

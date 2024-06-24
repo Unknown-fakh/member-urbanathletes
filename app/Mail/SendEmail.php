@@ -32,8 +32,14 @@ class SendEmail extends Mailable
     public function build()
     {
         $clubs = $this->clubs;
-        $clubData = ClubData::where('club_id', $this->dataEmail->club)->first();
-        return $this->subject('Hai '. $this->dataEmail->nama . ', Pesanan Anda Sebentar Lagi Kami Proses')
+        if ($this->dataEmail->club != null) {
+            $club_id = $this->dataEmail->club;
+        } else {
+            $club_id = $this->dataEmail->club_id;
+        }
+        
+        $clubData = ClubData::where('club_id', $club_id)->first();
+        return $this->subject('Hai '. $this->dataEmail->nama . ', Konfirmasi Pemesanan')
                     ->view('email.isi_email', compact('clubData', 'clubs'));
     }
 }
